@@ -1,4 +1,27 @@
+
+/* DARK MODE */
+body.dark-mode {
+    --primary-color: #65937a;      
+    --secondary-color: #F4A261;    
+    --accent-color: #E9C46A;       
+    --accent-hover: #F6D98F;       
+
+    --text-color: #E6E6E6;
+    --text-light: #B0B0B0;
+
+    --bg-color: #0F172A;           
+    --light-bg: #1E293B;
+    --card-bg: #1C1F2B;
+
+    --shadow: 0 5px 15px rgba(0,0,0,0.5);
+    --shadow-hover: 0 10px 25px rgba(0,0,0,0.7);
+
+    --gradient-start: #0F172A;
+    --gradient-end: #1E293B;
+}
+
 /*warna untuk light mode */
+
 :root {
     /* Warna Utama dari Gambar (Orange & Dark Blue) */
     --primary-color: #FF7043;      /* Orange di bagian atas */
@@ -29,28 +52,6 @@
     --font-xlarge: 1.5rem;
     --font-title: 2.5rem;
 }
-
-/* DARK MODE */
-body.dark-mode {
-    --primary-color: #65937a;      
-    --secondary-color: #F4A261;    
-    --accent-color: #E9C46A;       
-    --accent-hover: #F6D98F;       
-
-    --text-color: #E6E6E6;
-    --text-light: #B0B0B0;
-
-    --bg-color: #0F172A;           
-    --light-bg: #1E293B;
-    --card-bg: #1C1F2B;
-
-    --shadow: 0 5px 15px rgba(0,0,0,0.5);
-    --shadow-hover: 0 10px 25px rgba(0,0,0,0.7);
-
-    --gradient-start: #0F172A;
-    --gradient-end: #1E293B;
-}
-
 /* ========== 2. RESET & BASE STYLES ========== */
 * {
     margin: 0;
