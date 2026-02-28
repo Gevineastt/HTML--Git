@@ -1,25 +1,28 @@
-
+/*warna untuk light mode */
 :root {
-    /* Modern Sage Theme - Light Mode */
+    /* Warna Utama dari Gambar (Orange & Dark Blue) */
+    --primary-color: #FF7043;      /* Orange di bagian atas */
+    --secondary-color: #263238;    /* Biru gelap di baris kedua */
+    --accent-color: #546E7A;       /* Biru keabuan di baris ketiga */
+    --accent-hover: #455A64;       
 
-    --primary-color: #7F958C;      /* Deep sage */
-    --secondary-color: #9DB29B;    /* Soft sage */
-    --accent-color: #BFC4A9;       /* Light olive */
-    --accent-hover: #AEB59A;       /* Slightly darker olive */
+    /* Warna Teks */
+    --text-color: #263238;         
+    --text-light: #78909C;
 
-    --text-color: #2E2E2E;         
-    --text-light: #5F6A63;
-
-    --bg-color: #F4F5F2;           /* Soft off-white */
-    --light-bg: #E8EAE4;           
+    /* Warna Background (Light Grey dari baris terbawah) */
+    --bg-color: #ECEFF1;           /* Abu-abu sangat muda di baris paling bawah */
+    --light-bg: #CFD8DC;           
     --card-bg: #FFFFFF;
 
+    /* Shadow & Gradient tetap */
     --shadow: 0 5px 15px rgba(0,0,0,0.08);
     --shadow-hover: 0 10px 25px rgba(0,0,0,0.15);
 
-    --gradient-start: #7F958C;
-    --gradient-end: #9DB29B;
+    --gradient-start: #FF7043;     /* Mulai dari Orange */
+    --gradient-end: #263238;       /* Berakhir di Biru Gelap */
 
+    /* Font Settings tetap */
     --font-small: 0.9rem;
     --font-normal: 1rem;
     --font-large: 1.2rem;
@@ -27,7 +30,7 @@
     --font-title: 2.5rem;
 }
 
-/* DARK MODE - Warna Mode Gelap */
+/* DARK MODE */
 body.dark-mode {
     --primary-color: #65937a;      
     --secondary-color: #F4A261;    
