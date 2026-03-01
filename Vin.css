@@ -23,29 +23,28 @@ body.dark-mode {
 /*warna untuk light mode */
 
 :root {
-    /* Warna Utama dari Gambar (Orange & Dark Blue) */
-    --primary-color: #FF7043;      /* Orange di bagian atas */
-    --secondary-color: #263238;    /* Biru gelap di baris kedua */
-    --accent-color: #546E7A;       /* Biru keabuan di baris ketiga */
+    
+    --primary-color: #FF7043;      
+    --secondary-color: #263238;    
+    --accent-color: #546E7A;       
     --accent-hover: #455A64;       
 
-    /* Warna Teks */
+   
     --text-color: #263238;         
     --text-light: #78909C;
 
-    /* Warna Background (Light Grey dari baris terbawah) */
-    --bg-color: #ECEFF1;           /* Abu-abu sangat muda di baris paling bawah */
+    
+    --bg-color: #ECEFF1;           
     --light-bg: #CFD8DC;           
     --card-bg: #FFFFFF;
 
-    /* Shadow & Gradient tetap */
+    
     --shadow: 0 5px 15px rgba(0,0,0,0.08);
     --shadow-hover: 0 10px 25px rgba(0,0,0,0.15);
 
-    --gradient-start: #FF7043;     /* Mulai dari Orange */
-    --gradient-end: #263238;       /* Berakhir di Biru Gelap */
-
-    /* Font Settings tetap */
+    --gradient-start: #FF7043;     
+    --gradient-end: #263238;       
+    
     --font-small: 0.9rem;
     --font-normal: 1rem;
     --font-large: 1.2rem;
@@ -256,17 +255,7 @@ body {
 }
 
 .hero {
-    margin-top: 80px;
-    min-height: 100vh;
-    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    text-align: center;
-    padding: 2rem;
-    position: relative;
-    overflow: hidden;
+  background-attachment: fixed;
 }
 
 
@@ -947,8 +936,8 @@ footer p {
 }
 
 .logo img {
-    width: 40px;           /* Ukuran logo - bisa diubah */
-    height: 40px;
+    width: 50px;           /* Ukuran logo - bisa diubah */
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -1070,12 +1059,12 @@ footer p {
 }
 
 .profile-img {
-    width: 200px;           /* Ukuran foto profile - bisa diubah */
-    height: 200px;
+    width: 300px;           /* Ukuran foto profile - bisa diubah */
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid var(--white);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(9,0,0,0.9);
     margin-bottom: 2rem;
 }
 
@@ -1650,4 +1639,38 @@ footer p {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--primary-color);
+}
+
+/* SLide animation */
+.hidden-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hidden-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* ============================= */
+/* STAGGER EFFECT */
+/* ============================= */
+
+.stagger-hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.stagger-hidden.show {
+    opacity: 1;
+    transform: translateY(0);
 }
